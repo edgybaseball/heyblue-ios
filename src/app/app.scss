@@ -28,3 +28,13 @@
   padding: 0.8em;
   text-align: center;
 }
+
+.heyblue-menu
+{
+  background-color : #EDEDEC;
+}
+
+.heyblue-menu-button
+{
+  @extend .heyblue-menu;
+}
