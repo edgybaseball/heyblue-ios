@@ -6,6 +6,7 @@ import { Page2 } from '../pages/page2/page2';
 import { Home } from '../pages/home/home';
 import { CoachGameSchedule} from '../pages/coach-game-schedule/coach-game-schedule';
 import { CoachContacts } from  '../pages/coach-contacts/coach-contacts';
+import { Rules } from '../pages/rules/rules'
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { CoachContacts } from  '../pages/coach-contacts/coach-contacts';
     Home,
     CoachGameSchedule,
     CoachContacts,
+    Rules,
     Page1, //TODO remove these
     Page2,
   ],
@@ -25,6 +27,7 @@ import { CoachContacts } from  '../pages/coach-contacts/coach-contacts';
     Home,
     CoachGameSchedule,
     CoachContacts,
+    Rules,
     Page1,
     Page2
   ],
