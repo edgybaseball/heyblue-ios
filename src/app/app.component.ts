@@ -6,6 +6,7 @@ import { StatusBar } from 'ionic-native';
 //import { Page2 } from '../pages/page2/page2';
 import { Home } from '../pages/home/home';
 import { CoachGameSchedule} from '../pages/coach-game-schedule/coach-game-schedule';
+import { CoachContacts } from  '../pages/coach-contacts/coach-contacts';
 
 import { UserRole } from './UserRole'
 
@@ -46,6 +47,7 @@ export class MyApp {
       case UserRole.COACH:
         this.pages[0].title = 'Rate umpires';
         this.pages.push({ title: 'Game Schedule', component: CoachGameSchedule, icon : 'ios-calendar-outline'});
+        this.pages.push({ title: 'Contacts', component: CoachContacts, icon : 'ios-contacts-outline'});
         break;
       default:
         throw new Error("Unsupported role!");
