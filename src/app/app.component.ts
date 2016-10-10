@@ -6,6 +6,8 @@ import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
 import { Home } from '../pages/home/home';
 
+import { UserRole } from './UserRole'
+
 
 @Component({
   templateUrl: 'app.html'
@@ -13,20 +15,36 @@ import { Home } from '../pages/home/home';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
+  userRole: UserRole;
   rootPage: any = Home;
+
 
   pages: Array<{title: string, component: any}>;
 
   constructor(public platform: Platform) {
     this.initializeApp();
 
+    this.userRole = UserRole.COACH; //HARDCODED FOR NOW
+    this.initializePages();
+
+  }
+
+  private initializePages(){
     // used for an example of ngFor and navigation
+
     this.pages = [
       { title: 'Home', component: Home, icon : 'ios-thumbs-up-outline' },
       { title: 'Page One', component: Page1, icon : 'ios-close-circle-outline'},
       { title: 'Page Two', component: Page2, icon : 'ios-close-circle-outline' }
     ];
 
+    switch(this.userRole){
+      case UserRole.COACH:
+        this.pages[0].title = 'Rate umpires';
+        break;
+      default:
+        throw new Error("Unsupported role!");
+    }
   }
 
   initializeApp() {
