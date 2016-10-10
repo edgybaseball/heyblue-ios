@@ -17,7 +17,6 @@
 
 .heyblue-bottom-bar
 {
-  //height: 50%;
   background-color: map-get($colors, 'heybluecolor');
 }
 
@@ -37,4 +36,5 @@
 .heyblue-menu-button
 {
   @extend .heyblue-menu;
+  font-size: x-large;
 }
