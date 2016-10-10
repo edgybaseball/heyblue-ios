@@ -6,8 +6,9 @@ import { Page2 } from '../pages/page2/page2';
 import { Home } from '../pages/home/home';
 import { CoachGameSchedule} from '../pages/coach-game-schedule/coach-game-schedule';
 import { CoachContacts } from  '../pages/coach-contacts/coach-contacts';
-import { Rules } from '../pages/rules/rules'
-import { Search } from '../pages/search/search'
+import { Rules } from '../pages/rules/rules';
+import { Search } from '../pages/search/search';
+import { Help } from '../pages/help/help';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { Search } from '../pages/search/search'
     CoachContacts,
     Rules,
     Search,
+    Help,
     Page1, //TODO remove these
     Page2,
   ],
@@ -31,6 +33,7 @@ import { Search } from '../pages/search/search'
     CoachContacts,
     Rules,
     Search,
+    Help,
     Page1,
     Page2
   ],

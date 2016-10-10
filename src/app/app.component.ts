@@ -9,6 +9,7 @@ import { CoachGameSchedule} from '../pages/coach-game-schedule/coach-game-schedu
 import { CoachContacts } from  '../pages/coach-contacts/coach-contacts';
 import { Rules } from '../pages/rules/rules';
 import { Search } from '../pages/search/search';
+import { Help } from '../pages/help/help';
 
 import { UserRole } from './UserRole'
 
@@ -52,6 +53,7 @@ export class MyApp {
         this.pages.push({ title: 'Contacts', component: CoachContacts, icon : 'ios-contacts-outline'});
         this.pages.push({ title: 'Rules', component: Rules, icon : 'ios-list-box-outline'});
         this.pages.push({ title: 'Search', component: Search, icon : 'ios-search'});
+        this.pages.push({ title: 'Help', component: Help, icon : 'ios-help-circle-outline'});
         break;
       default:
         throw new Error("Unsupported role!");
