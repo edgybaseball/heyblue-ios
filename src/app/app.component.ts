@@ -7,7 +7,6 @@ import { StatusBar } from 'ionic-native';
 import { Home } from '../pages/home/home';
 import { CoachGameSchedule} from '../pages/coach-game-schedule/coach-game-schedule';
 
-
 import { UserRole } from './UserRole'
 
 
@@ -25,13 +24,13 @@ export class MyApp {
 
   constructor(public platform: Platform) {
     this.initializeApp();
-
-    this.userRole = UserRole.COACH; //HARDCODED FOR NOW
     this.initializePages();
 
   }
 
   private initializePages(){
+    this.userRole = UserRole.COACH; //HARDCODED FOR NOW
+
     // used for an example of ngFor and navigation
 
     this.pages = [

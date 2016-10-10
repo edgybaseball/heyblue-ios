@@ -4,13 +4,15 @@ import { MyApp } from './app.component';
 import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
 import { Home } from '../pages/home/home';
+import { CoachGameSchedule} from '../pages/coach-game-schedule/coach-game-schedule';
 
 @NgModule({
   declarations: [
     MyApp,
     Home,
-    Page1,
-    Page2
+    CoachGameSchedule,
+    Page1, //TODO remove these
+    Page2,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -19,6 +21,7 @@ import { Home } from '../pages/home/home';
   entryComponents: [
     MyApp,
     Home,
+    CoachGameSchedule,
     Page1,
     Page2
   ],
