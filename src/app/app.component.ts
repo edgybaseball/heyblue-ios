@@ -2,9 +2,11 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 
-import { Page1 } from '../pages/page1/page1';
-import { Page2 } from '../pages/page2/page2';
+//import { Page1 } from '../pages/page1/page1';
+//import { Page2 } from '../pages/page2/page2';
 import { Home } from '../pages/home/home';
+import { CoachGameSchedule} from '../pages/coach-game-schedule/coach-game-schedule';
+
 
 import { UserRole } from './UserRole'
 
@@ -33,14 +35,18 @@ export class MyApp {
     // used for an example of ngFor and navigation
 
     this.pages = [
-      { title: 'Home', component: Home, icon : 'ios-thumbs-up-outline' },
-      { title: 'Page One', component: Page1, icon : 'ios-close-circle-outline'},
-      { title: 'Page Two', component: Page2, icon : 'ios-close-circle-outline' }
+      { title: 'Home', component: Home, icon : 'ios-thumbs-up-outline' }
     ];
+
+    //uncomment to see ionic generated pages
+    //TODO: after being comfortable with ionic remove these code along with the pages
+    //this.pages.push({ title: 'Page One', component: Page1, icon : 'ios-close-circle-outline'});
+    //this.pages.push({ title: 'Page Two', component: Page2, icon : 'ios-close-circle-outline' });
 
     switch(this.userRole){
       case UserRole.COACH:
         this.pages[0].title = 'Rate umpires';
+        this.pages.push({ title: 'Game Schedule', component: CoachGameSchedule, icon : 'ios-calendar-outline'});
         break;
       default:
         throw new Error("Unsupported role!");
