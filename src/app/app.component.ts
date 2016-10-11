@@ -36,11 +36,6 @@ export class MyApp {
     this.userRole = UserRole.COACH; //HARDCODED FOR NOW
 
     // used for an example of ngFor and navigation
-
-    this.pages = [
-      { title: 'Home', component: Home, icon : 'ios-thumbs-up-outline' }
-    ];
-
     //uncomment to see ionic generated pages
     //TODO: after being comfortable with ionic remove these code along with the pages
     //this.pages.push({ title: 'Page One', component: Page1, icon : 'ios-close-circle-outline'});
@@ -48,12 +43,12 @@ export class MyApp {
 
     switch(this.userRole){
       case UserRole.COACH:
-        this.pages[0].title = 'Rate umpires';
-        this.pages.push({ title: 'Game Schedule', component: CoachGameSchedule, icon : 'ios-calendar-outline'});
-        this.pages.push({ title: 'Contacts', component: CoachContacts, icon : 'ios-contacts-outline'});
-        this.pages.push({ title: 'Rules', component: Rules, icon : 'ios-list-box-outline'});
-        this.pages.push({ title: 'Search', component: Search, icon : 'ios-search'});
-        this.pages.push({ title: 'Help', component: Help, icon : 'ios-help-circle-outline'});
+        this.pages.push({ title: 'Rate umpires', component: Home, icon : 'rate' });
+        this.pages.push({ title: 'Game Schedule', component: CoachGameSchedule, icon : 'sched'});
+        this.pages.push({ title: 'Contacts', component: CoachContacts, icon : 'contacts'});
+        this.pages.push({ title: 'Rules', component: Rules, icon : 'rules'});
+        this.pages.push({ title: 'Search', component: Search, icon : 'search'});
+        this.pages.push({ title: 'Help', component: Help, icon : 'help'});
         break;
       default:
         throw new Error("Unsupported role!");
