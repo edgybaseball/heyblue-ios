@@ -24,7 +24,7 @@ export class MyApp {
   rootPage: any = Home;
 
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: string}>;
 
   constructor(public platform: Platform) {
     this.initializeApp();
@@ -36,6 +36,7 @@ export class MyApp {
     this.userRole = UserRole.COACH; //HARDCODED FOR NOW
 
     // used for an example of ngFor and navigation
+    this.pages = [];
     //uncomment to see ionic generated pages
     //TODO: after being comfortable with ionic remove these code along with the pages
     //this.pages.push({ title: 'Page One', component: Page1, icon : 'ios-close-circle-outline'});
