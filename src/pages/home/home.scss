@@ -1,3 +1,6 @@
 page-home {
-
+  .heyblue-text-small-centered{
+    @extend .heyblue-text-x-small-centered;
+    font-size: small;
+  }
 }

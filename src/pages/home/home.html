@@ -1,13 +1,29 @@
+<!-- TODO header and footer can be placed inside a template, thus avoiding copy pasting those across pages -->
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="heybluecolor">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <button ion-button menuToggle right>
+      <span class="heyblue-text-x-small-centered">LOG OUT</span>
+    </button>
   </ion-navbar>
+  <ion-toolbar color="heybluecolor">
+    <ion-title align="center">Welcome back, Coach</ion-title>
+    <ion-title align="center">
+      <span class="heyblue-text-small-centered">{{today | date:'EEEE, MMMM, dd, yyyy'}}</span>
+    </ion-title>
+  </ion-toolbar>
 </ion-header>
 
-
-<ion-content padding>
-Home
+<ion-content class="heyblue-menu">
+  coach home
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="heybluecolor">
+    <div class="heyblue-menu-header-img-container">
+      test<!--<img src="assets/img/heyBlueText.svg">-->
+    </div>
+  </ion-toolbar>
+</ion-footer>

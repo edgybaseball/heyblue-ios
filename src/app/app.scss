@@ -20,12 +20,16 @@
   background-color: map-get($colors, 'heybluecolor');
 }
 
-.heyblue-bottom-bar div
-{
+.heyblue-text-x-small-centered{
   font-size: x-small;
   color: white;
-  padding: 0.8em;
+  //padding: 0.8em;
   text-align: center;
+}
+
+.heyblue-bottom-bar div {
+  @extend .heyblue-text-x-small-centered;
+  padding: 0.8em;
 }
 
 .heyblue-menu-header-img-container {
@@ -40,13 +44,11 @@
   margin-top: -45px;
 }
 
-.heyblue-menu
-{
+.heyblue-menu {
   background-color : #EDEDEC;
 }
 
-.heyblue-menu-button
-{
+.heyblue-menu-button {
   @extend .heyblue-menu;
   font-size: x-large;
 }
