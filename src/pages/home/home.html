@@ -1,6 +1,6 @@
 <!-- TODO header and footer can be placed inside a template, thus avoiding copy pasting those across pages -->
 <ion-header>
-  <ion-navbar color="heybluecolor">
+  <ion-navbar color="heybluecolor" no-border no-lines no-padding no-margin>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -8,22 +8,20 @@
       <span class="heyblue-text-x-small-centered">LOG OUT</span>
     </button>
   </ion-navbar>
-  <ion-toolbar color="heybluecolor">
-    <ion-title align="center">Welcome back, Coach</ion-title>
-    <ion-title align="center">
-      <span class="heyblue-text-small-centered">{{today | date:'EEEE, MMMM, dd, yyyy'}}</span>
-    </ion-title>
+  <ion-toolbar color="heybluecolor" no-border no-lines no-padding no-margin>
+    <div align="center">
+      <div class="heyblue-text-small-centered" style="font-size: x-large">Welcome back, Coach<br/></div>
+      <div class="heyblue-text-small-centered">{{today | date:'EEEE, MMMM, dd, yyyy'}}</div>
+    </div>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="heyblue-menu">
+<ion-content>
   coach home
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar color="heybluecolor">
-    <div class="heyblue-menu-header-img-container">
-      test<!--<img src="assets/img/heyBlueText.svg">-->
-    </div>
+  <ion-toolbar color="heybluecolor" class="heyblue-footer" align="center">
+    <img src="assets/img/wppaLogoColor.png" class="heyblue-footer-img">
   </ion-toolbar>
 </ion-footer>
