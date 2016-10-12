@@ -25,4 +25,54 @@ page-home {
     height: $image-size;
     vertical-align: middle;
   }
+
+  .unrated-title {
+    color: map-get($colors, 'heybluecolor');
+    margin-left: 1.5em;
+  }
+
+  .unrated-details {
+    text-align: center;
+    font-size: medium;
+  }
+
+  .unrated-details-small {
+    @extend .unrated-details;
+    font-size: small;
+  }
+
+  $heyblue-gray : #BFC8CE;
+
+  .rate-button {
+    width: 200px;
+    background-color: $heyblue-gray;
+    color: black;
+    display: block;
+    margin: 0 auto;
+  }
+
+  $space-in-between : 1em;
+
+  .link-button-container {
+    margin-top: $space-in-between;
+    margin-bottom: $space-in-between;
+    padding-top: $space-in-between;
+    padding-bottom: $space-in-between;
+    text-align: center;
+  }
+
+  .link-button {
+    color: map-get($colors, 'heybluecolor');
+    text-decoration: none;
+    font-size: small;
+  }
+
+  .rate-ump-other {
+    @extend .link-button-container;
+    border-top: 1px solid $heyblue-gray;
+  }
+
+  .rate-ump-gt {
+    color: $heyblue-gray;
+  }
 }
