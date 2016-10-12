@@ -10,7 +10,7 @@
   <ion-content class="heyblue-menu">
     <ion-list no-lines>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" class="heyblue-menu-button">
-        <ion-icon ios="{{p.icon}}" md="{{p.icon}}"></ion-icon> {{p.title}}
+        <custom-icon set="heyBlue" name="{{p.icon}}"></custom-icon> {{p.title}}
       </button>
       <button menuClose ion-item class="heyblue-menu-button">
         <ion-icon name="log-out"></ion-icon> Log out
