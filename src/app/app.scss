@@ -27,6 +27,16 @@
   text-align: center;
 }
 
+.heyblue-text-small-centered{
+  @extend .heyblue-text-x-small-centered;
+  font-size: small;
+}
+
+.heyblue-text-x-large-centered{
+  @extend .heyblue-text-x-small-centered;
+  font-size: x-large;
+}
+
 .heyblue-bottom-bar div {
   @extend .heyblue-text-x-small-centered;
   padding: 0.8em;

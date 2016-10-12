@@ -1,14 +1,28 @@
 page-home {
-  .heyblue-text-small-centered{
-    @extend .heyblue-text-x-small-centered;
-    font-size: small;
-  }
+
+  $image-size : 3.5em;
 
   .heyblue-footer{
     height: 4em;
   }
 
   .heyblue-footer-img {
-    height: 3.5em;
+    height: $image-size;
+  }
+
+  .heyblue-text-x-large-centered-black{
+    @extend .heyblue-text-x-small-centered;
+    font-size: x-large;
+    color: black;
+  }
+
+  .heyblue-content {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .heyblue-team {
+    height: $image-size;
+    vertical-align: middle;
   }
 }
