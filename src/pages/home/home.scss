@@ -1,15 +1,5 @@
 page-home {
 
-  $image-size : 3.5em;
-
-  .heyblue-footer{
-    height: 4em;
-  }
-
-  .heyblue-footer-img {
-    height: $image-size;
-  }
-
   .heyblue-text-x-large-centered-black{
     @extend .heyblue-text-x-small-centered;
     font-size: x-large;
@@ -22,7 +12,7 @@ page-home {
   }
 
   .heyblue-team {
-    height: $image-size;
+    height: $team-logo-size;
     vertical-align: middle;
   }
 
