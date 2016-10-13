@@ -12,8 +12,6 @@ import { Search } from '../pages/search/search';
 import { Help } from '../pages/help/help';
 import { RateUmpire } from '../pages/rate-umpire/rate-umpire';
 
-import { DateToday } from '../components/date-today/date-today'
-
 @NgModule({
   declarations: [
     MyApp,
@@ -28,9 +26,6 @@ import { DateToday } from '../components/date-today/date-today'
     RateUmpire,
     Page1, //TODO remove these
     Page2,
-
-    //components
-    DateToday
   ],
   imports: [
     IonicModule.forRoot(MyApp),

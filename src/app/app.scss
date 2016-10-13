@@ -51,6 +51,11 @@ $team-logo-size : 3.5em;
   font-size: small;
 }
 
+.heyblue-text-medium-centered{
+  @extend .heyblue-text-x-small-centered;
+  font-size: medium;
+}
+
 .heyblue-text-x-large-centered{
   @extend .heyblue-text-x-small-centered;
   font-size: x-large;

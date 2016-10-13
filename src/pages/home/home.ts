@@ -13,6 +13,8 @@ import { NavController } from 'ionic-angular';
 })
 export class Home {
 
+  today : Date = new Date();
+
   constructor(public navCtrl: NavController) {}
 
   ionViewDidLoad() {
