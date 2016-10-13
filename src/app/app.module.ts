@@ -10,18 +10,27 @@ import { CoachContacts } from  '../pages/coach-contacts/coach-contacts';
 import { Rules } from '../pages/rules/rules';
 import { Search } from '../pages/search/search';
 import { Help } from '../pages/help/help';
+import { RateUmpire } from '../pages/rate-umpire/rate-umpire';
+
+import { DateToday } from '../components/date-today/date-today'
 
 @NgModule({
   declarations: [
     MyApp,
+
+    //pages
     Home,
     CoachGameSchedule,
     CoachContacts,
     Rules,
     Search,
     Help,
+    RateUmpire,
     Page1, //TODO remove these
     Page2,
+
+    //components
+    DateToday
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -36,6 +45,7 @@ import { Help } from '../pages/help/help';
     Rules,
     Search,
     Help,
+    RateUmpire, //TODO REMOVE THIS
     Page1,
     Page2
   ],

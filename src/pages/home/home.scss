@@ -1,21 +1,5 @@
 page-home {
 
-  .heyblue-text-x-large-centered-black{
-    @extend .heyblue-text-x-small-centered;
-    font-size: x-large;
-    color: black;
-  }
-
-  .heyblue-content {
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
-
-  .heyblue-team {
-    height: $team-logo-size;
-    vertical-align: middle;
-  }
-
   .unrated-title {
     color: map-get($colors, 'heybluecolor');
     margin-left: 1.5em;
