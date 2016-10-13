@@ -20,6 +20,21 @@ module.exports = {
        src: 'heyblue_icons/font-awesome/*.svg',
        name: 'FontAwesome',
        id: 'fontAwesome'
+     },
+     {
+       src: 'heyblue_icons/smartphone-essentials/*.svg',
+       name: 'SmartphoneEssentials',
+       id: 'smartPhoneEssentials'
+     },
+     {
+       src: 'heyblue_icons/glypho/*.svg',
+       name: 'glypho',
+       id: 'glypho'
+     },
+     {
+       src: 'heyblue_icons/contacts-communication/*.svg',
+       name: 'contacts-communication',
+       id: 'contactsCommunication'
      }
    ]
 };
