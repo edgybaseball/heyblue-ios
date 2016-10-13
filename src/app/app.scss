@@ -62,3 +62,11 @@
   @extend .heyblue-menu;
   font-size: x-large;
 }
+
+.heyblue-menu-button * {
+  vertical-align: middle;
+}
+
+.heyblue-menu-button-icon {
+  margin-bottom: -0.2em;
+}

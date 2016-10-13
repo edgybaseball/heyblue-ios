@@ -24,7 +24,7 @@ export class MyApp {
   rootPage: any = Home;
 
 
-  pages: Array<{title: string, component: any, icon: string}>;
+  pages: Array<{title: string, component: any, icon: string, iconpack: string}>;
 
   constructor(public platform: Platform) {
     this.initializeApp();
@@ -44,12 +44,12 @@ export class MyApp {
 
     switch(this.userRole){
       case UserRole.COACH:
-        this.pages.push({ title: 'Rate umpires', component: Home, icon : 'rate' });
-        this.pages.push({ title: 'Game Schedule', component: CoachGameSchedule, icon : 'sched'});
-        this.pages.push({ title: 'Contacts', component: CoachContacts, icon : 'contacts'});
-        this.pages.push({ title: 'Rules', component: Rules, icon : 'rules'});
-        this.pages.push({ title: 'Search', component: Search, icon : 'search'});
-        this.pages.push({ title: 'Help', component: Help, icon : 'help'});
+        this.pages.push({ title: 'Rate umpires', component: Home, icon : 'thumbs-o-up', iconpack: 'fontAwesome'});
+        this.pages.push({ title: 'Game Schedule', component: CoachGameSchedule, icon : 'calendar', iconpack: 'fontAwesome'});
+        this.pages.push({ title: 'Contacts', component: CoachContacts, icon : 'phone-book-2', iconpack: 'contactsCommunication'});
+        this.pages.push({ title: 'Rules', component: Rules, icon : 'clipboard-icon', iconpack: 'glypho'});
+        this.pages.push({ title: 'Search', component: Search, icon : 'search', iconpack: 'fontAwesome'});
+        this.pages.push({ title: 'Help', component: Help, icon : 'question', iconpack: 'smartPhoneEssentials'});
         break;
       default:
         throw new Error("Unsupported role!");

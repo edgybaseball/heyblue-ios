@@ -10,10 +10,14 @@
   <ion-content class="heyblue-menu">
     <ion-list no-lines>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" class="heyblue-menu-button">
-        <custom-icon set="heyBlue" name="{{p.icon}}"></custom-icon> {{p.title}}
+        <ion-icon ios="{{p.icon}}" md="{{p.icon}}" *ngIf="p.iconpack === 'ionicons'" class="heyblue-menu-button-icon"></ion-icon>
+        <custom-icon set="{{p.iconpack}}" name="{{p.icon}}" *ngIf="p.iconpack !== 'ionicons'" class="heyblue-menu-button-icon"></custom-icon>
+        <span style="vertical-align: middle;">{{p.title}}</span>
       </button>
       <button menuClose ion-item class="heyblue-menu-button">
-        <ion-icon name="log-out"></ion-icon> Log out
+        <!--<ion-icon ios="md-log-out" md="md-log-out" class="heyblue-menu-button-icon"></ion-icon>-->
+        <custom-icon set="fontAwesome" name="sign-out" class="heyblue-menu-button-icon"></custom-icon>
+        Log out
       </button>
     </ion-list>
   </ion-content>
