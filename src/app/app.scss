@@ -27,14 +27,6 @@ $team-logo-size : 3.5em;
   vertical-align: middle;
 }
 
-.heyblue-footer{
-  height: 4em;
-}
-
-.heyblue-footer-img {
-  height: $team-logo-size;
-}
-
 .heyblue-bottom-bar
 {
   background-color: map-get($colors, 'heybluecolor');
