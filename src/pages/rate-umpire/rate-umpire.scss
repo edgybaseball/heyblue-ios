@@ -1,3 +1,28 @@
 page-rate-umpire {
+  .question-text {
+    @extend .heyblue-text-x-large-centered-black;
+    font-weight: bold;
+  }
 
+  .rating {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+
+    &.rating > li {
+      margin: 0px;
+      padding: 5px 5px  !important;
+      background: none;
+      color: #ffb400;
+
+      ion-icon {
+        padding: 0px;
+        font-size: x-large;
+      }
+    }
+  }
+
+  progress[value]{
+    width: 100%;
+  }
 }

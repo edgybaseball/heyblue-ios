@@ -13,6 +13,8 @@ import { NavController } from 'ionic-angular';
 })
 export class RateUmpire {
 
+  rating: number = 4;
+
   constructor(public navCtrl: NavController) {}
 
   ionViewDidLoad() {

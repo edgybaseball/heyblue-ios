@@ -1,12 +1,9 @@
 <ion-header>
   <ion-navbar color="heybluecolor" no-border no-lines no-padding no-margin>
-    <button ion-button menuToggle left>
-      <ion-icon name="menu"></ion-icon>
-    </button>
     <div class="heyblue-text-medium-centered" center>Rate Umpire</div>
-    <button ion-button menuToggle right>
+    <ion-buttons end>
       <span class="heyblue-text-x-small-centered">LOG OUT</span>
-    </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
@@ -17,6 +14,58 @@
       <span class="heyblue-text-x-large-centered-black">2017 Junior Cubs</span>
     </div>
   </div>
+  <ion-card>
+    <ion-card-header align="center">
+      <span class="heyblue-text-medium-centered-black">Today vs Junior Mets</span>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid align="center">
+        <ion-row>
+          <ion-col>
+            <p>1pm at Welles Park Junior diamond</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p>Ump: <b>Jack Mills</b></p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p>
+              <br/>
+              <span class="question-text">
+                1. Was the umpire on time and prepared?
+              </span>
+              <br/>
+            </p>
+          </ion-col>
+        </ion-row>
+        <ion-row center>
+          <ion-col width-20 align="left">
+            No
+          </ion-col>
+          <ion-col width-60>
+            <rating [(ngModel)]="rating" class="rating"></rating>
+          </ion-col>
+          <ion-col width-20 style="text-align: right">
+            Yes
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <progress max="100" value="25"></progress>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col width-30 offset-70 style="text-align: right">
+            <span>25% done</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </ion-card-content>
+  </ion-card>
 </ion-content>
 
 <ion-footer>

@@ -56,6 +56,11 @@ $team-logo-size : 3.5em;
   font-size: medium;
 }
 
+.heyblue-text-medium-centered-black{
+  @extend .heyblue-text-medium-centered;
+  color: black;
+}
+
 .heyblue-text-x-large-centered{
   @extend .heyblue-text-x-small-centered;
   font-size: x-large;
@@ -64,6 +69,12 @@ $team-logo-size : 3.5em;
 .heyblue-text-x-large-centered-black{
   @extend .heyblue-text-x-small-centered;
   font-size: x-large;
+  color: black;
+}
+
+.heyblue-text-large-centered-black{
+  @extend .heyblue-text-x-small-centered;
+  font-size: large;
   color: black;
 }
 
