@@ -5,18 +5,20 @@ page-rate-umpire {
   }
 
   .rating {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     text-align: center;
 
     &.rating > li {
-      margin: 0px;
-      padding: 5px 5px  !important;
+      margin: 0em;
+      width: 100%;
+      padding: 0 !important;
       background: none;
       color: #ffb400;
 
       ion-icon {
-        padding: 0px;
+        margin: 0 2vw !important;
+        padding: 0 !important;
         font-size: x-large;
       }
     }

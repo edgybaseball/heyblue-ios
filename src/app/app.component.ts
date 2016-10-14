@@ -51,7 +51,7 @@ export class MyApp {
         this.pages.push({ title: 'Rules', component: Rules, icon : 'clipboard-icon', iconpack: 'glypho'});
         this.pages.push({ title: 'Search', component: Search, icon : 'search', iconpack: 'fontAwesome'});
         this.pages.push({ title: 'Help', component: Help, icon : 'question', iconpack: 'smartPhoneEssentials'});
-        this.pages.push({ title: 'Rate Umpire', component: RateUmpire, icon : 'exclamation-triangle', iconpack: 'fontAwesome'});
+        // this.pages.push({ title: 'Rate Umpire', component: RateUmpire, icon : 'exclamation-triangle', iconpack: 'fontAwesome'});
         break;
       default:
         throw new Error("Unsupported role!");
